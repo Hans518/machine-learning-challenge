@@ -1,38 +1,9 @@
-# Machine Learning Homework - Exoplanet Exploration
+# Machine Learning Homework - Exoplanet Exploration 
+### Hans Engelbrecht
 
-![exoplanets.jpg](Images/exoplanets.jpg)
+### Initial Observations
 
-### Before You Begin
-
-1. Create a new repository for this project called `machine-learning-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Give each model you choose their own Jupyter notebook, **do not use more than one model per notebook.**
-
-4. Save your best model to a file. This will be the model used to test your accuracy and used for grading.
-
-5. Commit your Jupyter notebooks and model file and push them to GitHub.
-
-## Note
-
-Keep in mind that this homework is optional! However, you will gain a much greater understanding of testing and tuning different Classification models if you do complete it.
-
-## Background
-
-Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
-
-To help process this data, you will create machine learning models capable of classifying candidate exoplanets from the raw dataset.
-
-In this homework assignment, you will need to:
-
-1. [Preprocess the raw data](#Preprocessing)
-2. [Tune the models](#Tune-Model-Parameters)
-3. [Compare two or more models](#Evaluate-Model-Performance)
-
-- - -
-
-## Instructions
+This is a model that looks at examining the Kepler Space Telescope data with the goal of identifying hidden planets. This first attempt at building a model is built from the guidence in the initial directions. 
 
 ### Preprocess the Data
 
@@ -46,44 +17,4 @@ In this homework assignment, you will need to:
 * Use `GridSearch` to tune model parameters.
 * Tune and compare at least two different classifiers.
 
-### Reporting
-
-* Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
-
-- - -
-
-## Resources
-
-* [Exoplanet Data Source](https://www.kaggle.com/nasa/kepler-exoplanet-search-results)
-
-* [Scikit-Learn Tutorial Part 1](https://www.youtube.com/watch?v=4PXAztQtoTg)
-
-* [Scikit-Learn Tutorial Part 2](https://www.youtube.com/watch?v=gK43gtGh49o&t=5858s)
-
-* [Grid Search](https://scikit-learn.org/stable/modules/grid_search.html)
-
-- - -
-
-## Hints and Considerations
-
-* Start by cleaning the data, removing unnecessary columns, and scaling the data.
-
-* Not all variables are significant be sure to remove any insignificant variables.
-
-* Make sure your `sklearn` package is up to date.
-
-* Try a simple model first, and then tune the model using `GridSearch`.
-
-- - -
-
-## Submission
-
-* Create a Jupyter Notebook for each model and host the notebooks on GitHub.
-
-* Create a file for your best model and push to GitHub
-
-* Include a README.md file that summarizes your assumptions and findings.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-##### © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+After looking a little closer at the metrics the model that's described in the directions appears to be very good at seeking out candidates with a .99 f1-score. In terms of identifying actual planets, a false positive is slightly more likely to be identified correctly than a confirmed planet. More modeling will need to be done to determine how best to confirm planets. 
